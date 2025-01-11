@@ -38,7 +38,7 @@ function randomCenterClick() {
     document.elementFromPoint(x, y).dispatchEvent(clickEvent);
 
     // 生成随机延迟（1到5秒之间）
-    const delay = 1000 + Math.random() * 4000;
+    const delay = 30 + Math.random() * 200;
 
     // 在控制台输出点击信息
     console.log(`点击位置: (${x}, ${y}), 下次点击延迟: ${delay.toFixed(2)}ms`);
